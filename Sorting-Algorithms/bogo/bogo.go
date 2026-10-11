@@ -6,7 +6,8 @@ import (
 )
 
 func Sort(a []int) {
-	deadline := time.Now().Add(time.Minute * 3)
+	deadline := time.Now().Add(time.Second)
+
 	for time.Now().Before(deadline) {
 		if is_inceremental(a) {
 			break
